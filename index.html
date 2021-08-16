@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank note withdraw</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+ <header class="my-8">
+    <h1 class="text-4xl text-center font-medium">welcome to my <span class="text-purple-600">Baer-Er-Bank</span> </h1>
+ </header>
+
+ <main>
+     <section class="w-3/4 bg-green-200 p-8 mx-auto" >
+         <h1 class="mb-2">Please Login</h1>
+         <div>
+             <input id="user-email" class="block w-3/4 mb-2 rounded border-gray-300" type="email" placeholder="username:islam12">
+             <input id="user-password" class="block w-3/4 mb-2 rounded border-gray-300" type="password" placeholder="password : islam12">
+             <button id="submit-button" class="bg-red-300 px-4 py-1 rounded">submit</button>
+         </div>
+     </section>
+ </main>
+
+ <script>
+      document.getElementById('submit-button').addEventListener('click',function(){
+         const useremail=document.getElementById('user-email').value;
+         const userpassword=document.getElementById('user-password').value;
+        if(useremail=='islam12' && userpassword=='islam12')
+       {
+        window.location.href = "css/index.html";
+       }
+       else {
+           alert('warning');
+       }
+      })
+ </script>
+</body>
+</html>
